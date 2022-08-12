@@ -1,138 +1,177 @@
 * {
-    box-sizing: border-box;
-}
-
-body {
     margin: 0;
-    /* font-family:'Courier New', Courier, monospace; */
-    font-family: "Tinos", sans-serif;
-    background-color: rgb(33, 33, 33);
-    color: rgb(241, 241, 241);
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Tinos", sans-serif; */
+    background-color: rgba(12,3,51,0.4);
+    color: white
 }
 
 html {
     font-size: 16px;
 }
 
-/* HEADER AND NAV PORTION */
-
-header h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* border: 2px solid red; */
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 2.5rem;
+main, footer, body {
+    background-color: transparent;
 }
 
-header h2 {
+
+/* transparnt backgrounds */
+nav ul, a, .header-content, .header-content h2, strong, #Experience, .experience-h3, .name-date, .experience-1, .name-date h4, .name-date h4 b, .experience-2, .name-bullets, ul, ul li, i, .name-bullets p, .tech-skills, .tech-skills-section, .tech-skills-list, .tech-skills-image, .education, .education-h3, .education-1, .education-2, #Projects, .projects-h3, #projects-list, .project-card, .project-card p, #Contact, .contact-box-form, .contact-left, .contact-right, .contact-h3, .input-row, .input-group, label, input, form, .contact-left h3, textarea, button, .contact-right h3, .lets-connect, .col-1 p, .col-2 p, .icons, .contact-right .lets-connect .col-1, .contact-right .lets-connect .col-2{
+    background-color: transparent;
+}
+
+/* NAV AND HEADER */
+.clouds {
+    /* border: 2px solid orange; */
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+    padding: 0 5%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    /* border: 2px solid red; */
-    margin-top: 0;
-    text-align: center;
-    font-size: 1.8rem;
+    justify-content: center;
+    box-shadow: 3px 3px 20px 5px rgb(27, 27, 27);
 }
 
 nav {
-    text-align: center;
     /* border: 2px solid red; */
-    margin-top: 2.5%;
-    /* padding-bottom: 0.5%; */
-    /* border-bottom: 2px solid black; */
+    background-color: transparent;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-about, .nav-experience, .nav-projects, .nav-contact {
-    padding-right: 1.5%;
-    padding-left: 1.5%;
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    background-color: transparent;
+}
+
+.fa-laptop-code {
+    color: #fff;
+    background-color: transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
     font-size: 1.1rem;
 }
 
-a {
-    color: white;
+.header-content {
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.header-content h2{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header-content a{
     text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+    /* font-weight: 600; */
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 
-a:hover {
-    text-shadow: 5px 5px 7px pink, 5px 5px 7px yellow;
+/* VIDEO HEADER */
+.back-video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
-#header-and-nav {
-    /* border: 2px solid red; */
-    padding: 10vh;
-    padding-top: 8vh;
-    box-shadow: 2px 3px 15px 5px rgb(255, 0, 170);
-    background-color: rgb(33, 33, 33);
-    margin-right: 1%;
-    /* border-radius: 5px; */
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-/* ABOUT ME PORTION */
-
+/* ABOUT */
 #about-img {
-    border: 2px solid aqua;
-    box-shadow: -4px 4px 7px 3px rgb(0, 255, 242);
+    /* border: 2px solid aqua; */
+    box-shadow: -4px 4px 10px 5px rgba(94, 70, 105, 0.68);
     border-radius: 50%;
+    background-color: transparent;
 }
 
 #About {
-    /* border: 2px solid red; */
+    /* background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+    /* border: 2px solid rgb(255, 0, 149); */
     padding: 10vh;
     margin-top: 2%;
     display: flex;
+    border-radius: 20px;
+    background-color: transparent;
 }
-
-/* .about-h3, .about-p-1, .about-p-2, .about-p-3 {
-    border: 2px solid rgb(132, 0, 255);
-    display: inline-block;
-} */
 
 #article-about-h3-p {
     /* border:2px solid orange; */
+    /* background-color: rgba(12,3,51,0.3); */
+    background-color: transparent;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-h3, .about-p-1, .about-p-2, .about-p-3 {
+    background-color: transparent;
 }
 
 .about-h3 {
+    background-color: transparent;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
 /* EXPERIENCE PORTION */
 
 #Experience {
-    /* border: 2px solid red; */
+    /* border: 2px solid rgb(255, 0, 195); */
+    border-radius: 20px;
+    margin-top: 4.5rem;
     padding: 3%;
     padding-top: 0.50%;
-
 }
 
 .experience-h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .tech-skills {
-    margin-top: 5%;
+    /* margin-top: 1rem; */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;;
 }
 
 .tech-skills-list {
     /* border: 2px solid aqua; */
     text-align: center;
-    /* list-style-position: inside; */
-    /* display: flex;
-    flex-direction: column; */
-    /* display: inline-block; */
     margin: auto 0;
     font-size: 1.1rem
 
@@ -141,24 +180,29 @@ a:hover {
 .tech-skills-section {
     /* border: 2px solid red; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 5rem;
 }
 
 .tech-skills-image {
     /* border: 2px solid red; */
     border-radius: 10%;
-    box-shadow: 3px 3px 7px 3px rgb(238, 108, 129);
+    /* box-shadow: 3px 3px 7px 3px rgb(238, 108, 129); */
 }
 
-/* .gen-usa {
-    border: 2px solid red;
-} */
+.tech-skills-item {
+    list-style-type: none;
+    font-size: 1.25rem;;
+}
 
 .name-date {
     display: flex;
     justify-content: space-between;
     /* border: 2px solid blue; */
     padding: 0;
+    margin-bottom: .25rem;
+    margin-top: 2.5rem;
 }
 
 /* .name-bullets {
@@ -167,65 +211,115 @@ a:hover {
 
 .name-bullets p {
     margin: 0px 0px;
+    margin-bottom: .75rem;
+}
+
+.name-bullets ul li {
+    margin-left: 3rem;
+    /* list-style-type:symbols(); */
 }
 
 .education-h3 {
     text-align: center;
     padding-top: 2%;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 
+
 /* PROJECTS */
+#Projects {
+    /* border: 2px solid pink; */
+    margin-top: 1rem;
+    /* margin-bottom: 2rem; */
+    padding-bottom:2.5rem;
+    border-radius: 20px;
+}
+
 .projects-h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     /* border: 2px solid red; */
-    margin-bottom: 0;
+    margin-bottom: 3rem;
 }
 
 #projects-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     /* border: 2px solid red; */
-    justify-content: space-around;
-    padding: 2%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .project-card {
-    /* background-color: blue; */
-    box-shadow: 3px 3px 7px 3px rgb(238, 108, 129);
-    padding: .5rem;
-    width: 30%;
+    background-color: rgba(33, 23, 82, 0.23);
+    box-shadow: 3px 3px 10px 7px rgba(12,3,51,0.4);
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    /* padding: 0.5rem; */
+    padding-bottom: 2rem;
+    width: 55%;
+    /* padding-top: 2rem; */
+    margin-bottom: 5rem;
 }
 
-.project-card img {
+/* #projects-list .project-card:first-child {
+    padding-top: 0;
+} */
+
+#Projects .project-card img {
     /* max-width: calc(100% - 1rem); */
     display: block;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding-top: 2%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* margin-bottom: 1rem; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 100%; */
+    /* padding:0; */
+    /* padding-top: 2%; */
 }
 
 .project-a-title-card {
+    color: white;
     text-align: center;
     font-size: 1.5rem;
     /* border: 2px solid yellow; */
     display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    margin-top: 3rem;
 }
+
+.project-card p {
+    margin-left: 2rem;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* CONTACT ME */
 .contact-h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .contact-box-form {
     /* border: 2px solid orange; */
-    background-color: rgb(33, 33, 33);
+    /* background-color: rgb(33, 33, 33); */
     display: flex;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    border-top: 2px solid white;
+    /* margin-top: 3rem; */
+    box-shadow: 3px 3px 20px 5px rgb(27, 27, 27);
 }
 
 .contact-left {
@@ -233,15 +327,19 @@ a:hover {
     flex-basis: 60%;
     padding: 20px 30px;
     /* margin-bottom: 20px; */
-    box-shadow: 3px -3px 7px 5px rgb(215, 14, 233);
+    /* box-shadow: 3px -3px 7px 5px rgb(215, 14, 233); */
+
 }
 
 .contact-right {
-    background-color: rgb(33, 33, 33);
+    /* background-color: rgb(33, 33, 33); */
     flex-basis: 40%;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
     color: white;
-    box-shadow: 3px -3px 7px 5px aqua;
+    /* box-shadow: 3px -3px 7px 5px aqua; */
+    /* border: 2px solid red; */
+    border-left: 2px solid white;
+    margin: 0 auto;
 }
 
 .input-row {
@@ -256,7 +354,7 @@ a:hover {
 }
 
 input {
-    background-color: rgb(33, 33, 33);
+    /* background-color: rgb(33, 33, 33); */
     width: 100%;
     border: none;
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -274,7 +372,7 @@ textarea {
     border: 1px solid rgb(255, 255, 255);
     outline: none;
     padding: 10px;
-    background-color: rgb(33, 33, 33);
+    /* background-color: rgb(33, 33, 33); */
     color: white;
 }
 
@@ -282,19 +380,21 @@ label {
     /* border: 2px solid red; */
     margin-bottom: 6px;
     display: block;
-    color:rgb(0, 255, 242);
+    color:rgba(12,3,51,0.6);
 }
 
 button {
-    background-color: rgb(38, 230, 230);
-    width: 12%;
+    background-color: rgba(12,3,51,0.4);
+    /* position: fixed; */
+    display:block;
+    width: 5rem;
     border: none;
     outline: none;
     color: white;
     height: 2rem;
     border-radius: 2rem;
     margin-top: 0.5rem;
-    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3)
+    box-shadow: 0px 5px 15px 0px rgba(124, 0, 181, 0.3)
 }
 
 .contact-left h3 {
@@ -307,15 +407,66 @@ button {
     color: rgb(255, 255, 255);
     font-weight: 600;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
 }
 
-tr td:first-child {
+/* table {
+    border: 2px solid red;
+    margin-left: 3.5rem;
+    background-color: rgba(12,3,51,0.4);
+    border: 2px solid red;
+} */
+
+/* td, tr {
+    border: none;
+    border: 2px solid red;
+
+} */
+
+
+/* tr td:first-child {
     padding-right: 1.5rem;
 }
 
 tr td {
     padding-top: 2rem;
+} */
+
+
+.lets-connect {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: space-around; */
+    /* background-color: */
+    margin: 3rem;
+    padding-top: 2rem;
 }
+
+/* .contact-right .lets-connect .col-1 .col-1-1{
+    padding-right: 7rem;
+}
+
+.contact-right .lets-connect .col-2 .col-2-1{
+    padding-left: 7rem;
+}
+
+.contact-right .lets-connect .col-1 .col-1-2{
+    padding-right: 10rem;
+    padding-bottom: 0;
+}
+
+.contact-right .lets-connect .col-2 .col-2-2{
+    padding-left: 10rem;
+}
+
+.contact-right .lets-connect .col-1 .col-1-3{
+    padding-right: 7rem;
+}
+
+.contact-right .lets-connect .col-2 .col-2-3{
+    padding-left: 7rem;
+} */
 
 .fa-brands {
     /* border: 2px solid red; */
@@ -326,4 +477,5 @@ tr td {
 
 .icons {
     text-align: center;
+    margin-top: 2rem;
 }

@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kharmalina's Profile</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href='https://fonts.googleapis.com/css?family=Tinos' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/700b9c3201.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <section id="header-and-nav">
-        <header>
-            <h1>
-                Kharmalina Tong &#128187;
-            </h1>
-            <h2>
-                Software Engineer & Web Developer
-            </h2>
-        </header>
+    <header class="clouds">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./images/video.mp4" type="video/mp4">
+        </video>
+
         <nav>
-            <!-- <a class="nav-home" href="#Home">Home</a> -->
-            <a class="nav-about" href="#About">About</a>
-            <a  class="nav-experience" href="#Experience">Experience</a>
-            <a class="nav-projects" href="#Projects">Projects</a>
-            <a class="nav-contact" href="#Contact">Contact</a>
+            <i class="fa-solid fa-laptop-code fa-3x"></i>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
         </nav>
-    </section>
+
+        <div class="header-content">
+            <h1>Kharmalina Tong &#128187;</h1>
+            <h2>Software Engineer & Web Developer</h2>
+            <a href="">Explore Below</a>
+        </div>
+    </header>
+
+
+
     <main>
         <!-- ABOUT ME -->
         <section id="About">
             <img id="about-img" height="350px" width="400px" src="./images/about-pic.jpg" alt="Kharmalina Tong profile picture">
                 <article id="article-about-h3-p">
                     <h3 class="about-h3" >&#10024; About Me &#10024;</h3>
-                    <p class="about-p-1" >Hey there! &#128075;&#127995; My name's <strong>Kharmalina</strong>, a New York City based Software Engineer and Web Developer who transitioned from the healthcare field! I am an ambitious full-stack developer who loves to build professional, user-friendly website and software applications.</p>
+                    <p class="about-p-1" >Hey there! &#128075;&#127995; My name's <strong class="Kharmalina">Kharmalina</strong>, a New York City based Software Engineer and Web Developer who transitioned from the healthcare field! I am an ambitious full-stack developer who loves to build professional, user-friendly website and software applications.</p>
                     <p class="about-p-2" >I consider myself as naturally curious, a forever learner, and perpetually working on improving my skills one problem at a time. I have the opportunity to work with the latest technologies on challenging and diverse projects.</p>
                     <p class="about-p-3" >If I can describe myself in one sentence that would be a movie fanatic, audiophile, and tech-obsessed!</p>
                 </article>
         </section>
+
 
         <!-- EXPERIENCE -->
         <section id="Experience">
@@ -74,31 +85,9 @@
                 </div>
             </section>
 
-            <!-- TECHNICAL SKIILS -->
-            <h3 class="tech-skills">&#128170;&#127995;Technical Skills&#128170;&#127995;</h3>
-            <section class="tech-skills-section">
-                <ul class="tech-skills-list">
-                    <li class="tech-skills-item" >HTML</li>
-                    <li class="tech-skills-item" >CSS</li>
-                    <li class="tech-skills-item" >JavaScript</li>
-                    <li class="tech-skills-item" >Command Line</li>
-                    <li class="tech-skills-item" >Bootstrap5</li>
-                    <li class="tech-skills-item" >Git</li>
-                    <li class="tech-skills-item" >React.js</li>
-                    <!-- <br> -->
-                    <li class="tech-skills-item" >Java</li>
-                    <li class="tech-skills-item" >Python</li>
-                    <li class="tech-skills-item" >Node.js</li>
-                    <!-- <li class="tech-skills-item" ></li>
-                    <li class="tech-skills-item" >Bootstrap5</li>
-                    <li class="tech-skills-item" >Git</li>
-                    <li class="tech-skills-item" >React.js</li> -->
-                </ul>
-                <img class="tech-skills-image" width = "500px" height="340px" src="./images/programming-apps-removebg-preview (1).png" alt="">
-            </section>
 
-            <!-- EDUCATION -->
-            <section class="education" >
+             <!-- EDUCATION -->
+             <section class="education" >
                 <h3 class="education-h3">&#128218; Education &#128218;</h3>
                 <!-- GEN USA CERT -->
                 <section class="gen-usa education-1">
@@ -127,6 +116,26 @@
             </section>
         </section>
 
+            <!-- TECHNICAL SKIILS -->
+            <h3 class="tech-skills">&#128170;&#127995;Technical Skills&#128170;&#127995;</h3>
+            <section class="tech-skills-section">
+                <ul class="tech-skills-list">
+                    <li class="tech-skills-item" >HTML</li>
+                    <li class="tech-skills-item" >CSS</li>
+                    <li class="tech-skills-item" >JavaScript</li>
+                    <li class="tech-skills-item" >Command Line</li>
+                    <li class="tech-skills-item" >Bootstrap5</li>
+                </ul>
+                <ul>
+                    <li class="tech-skills-item" >Git</li>
+                    <li class="tech-skills-item" >React.js</li>
+                    <li class="tech-skills-item" >Java</li>
+                    <li class="tech-skills-item" >Python</li>
+                    <li class="tech-skills-item" >Node.js</li>
+                </ul>
+                <!-- <img class="tech-skills-image" width = "500px" height="340px" src="./images/programming-apps-removebg-preview (1).png" alt=""> -->
+            </section>
+
 
         <!-- PROJECTS -->
         <section id="Projects">
@@ -147,74 +156,19 @@
                     <a class="project-a-title-card" href="https://kharmalina.github.io/TaskManagerApp/" target="_blank">Task Manager</a>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, in corrupti laborum officia quis consequatur totam cupiditate quidem, aperiam nesciunt distinctio temporibus. Debitis ullam, voluptatem quos obcaecati earum eos laudantium.</p>
                 </div>
+                <div class="project-card">
+                    <img src="./images/task-manager.png" alt="">
+                    <a class="project-a-title-card" href="https://kharmalina.github.io/TaskManagerApp/" target="_blank">Task Manager</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, in corrupti laborum officia quis consequatur totam cupiditate quidem, aperiam nesciunt distinctio temporibus. Debitis ullam, voluptatem quos obcaecati earum eos laudantium.</p>
+                </div>
             </section>
         </section>
-
-
-        <!-- Contact -->
-        <!-- <section id="Contact">
-            <h3 class="contact-h3">&#128222; Contact Me &#128231;</h3>
-            <section class="contact-box-form">
-                <div class="contact-left">
-                    <h3>Send a Message!</h3> -->
-                    <!-- FORM STARTS HERE -->
-                    <!-- <form>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Name</label>
-                                <input type="text" placeholder="Your Name">
-                            </div>
-                            <div class="input-group">
-                                <label>Phone Number</label>
-                                <input type="text" placeholder="123 456 7890">
-                            </div>
-                        </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Email</label>
-                                <input type="email" placeholder="NameHere@gmail.com">
-                            </div>
-                            <div class="input-group">
-                                <label>Subject</label>
-                                <input type="text" placeholder="Subject Title">
-                            </div>
-                        </div>
-
-                        <label>Message</label>
-                        <textarea  rows="5" placeholder="Your Message"></textarea>
-
-                        <button type="submit">SEND</button>
-                    </form>
-                </div>
-                <div class="contact-right">
-                    <h3>Let's Connect!</h3>
-                    <table>
-                        <tr>
-                            <td>Email</td>
-                            <td>kharmalinat7@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>+1 646 474 4458</td>
-                        </tr>
-                        <tr>
-                            <td>Location</td>
-                            <td>New York, NY</td>
-                        </tr>
-                    </table>
-                    <section class="icons">
-                        <a href="https://linkedin.com/in/kharmalina-tong/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Kharmalina" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/Balance_Kharma" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </section>
-                </div>
-            </section>
-        </section> -->
     </main>
+
     <footer>
         <!-- Contact -->
         <section id="Contact">
-            <h3 class="contact-h3">&#128222; Contact Me &#128231;</h3>
+            <!-- <h3 class="contact-h3">&#128222; Contact Me &#128231;</h3> -->
             <section class="contact-box-form">
                 <div class="contact-left">
                     <h3>Send a Message!</h3>
@@ -249,7 +203,7 @@
                 </div>
                 <div class="contact-right">
                     <h3>Let's Connect!</h3>
-                    <table>
+                    <!-- <table>
                         <tr>
                             <td>Email</td>
                             <td>kharmalinat7@gmail.com</td>
@@ -262,7 +216,30 @@
                             <td>Location</td>
                             <td>New York, NY</td>
                         </tr>
-                    </table>
+                    </table> -->
+
+
+                    <section class="lets-connect">
+                        <div class="col-1">
+                            <p class="col-1-1" >Email</p>
+                            <br>
+                            <p class="col-1-2">Phone</p>
+                            <br>
+                            <p class="col-1-3" >Location</p>
+                            <!-- <p>Kharmalinat7@gmail.com</p> -->
+                        </div>
+                        <div class="col-2">
+                            <p class="col-2-1" >Kharmalinat7@gmail.com</p>
+                            <br>
+                            <p class="col-2-2">+1 646 474 4458</p>
+                            <br>
+                            <p class="col-2-3" >New York, NY</p>
+                            <!-- <p>+1 646 474 4458</p> -->
+                        </div>
+                    </section>
+
+
+                    <!-- CONTACT ME ICONS   -->
                     <section class="icons">
                         <a href="https://linkedin.com/in/kharmalina-tong/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Kharmalina" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -272,5 +249,9 @@
             </section>
         </section>
     </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 </body>
+
 </html>
