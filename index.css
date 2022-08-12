@@ -8,8 +8,15 @@
     color: white
 }
 
+/* TRANSITION NAV SCROLL */
+nav.scroll {
+    background-color: rgba(114, 85, 129, 0.937);
+    color: #eef;
+  }
+
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 main, footer, body {
@@ -40,13 +47,14 @@ nav {
     /* border: 2px solid red; */
     background-color: transparent;
     width: 100%;
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
     padding: 20px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: background-color 0.3s ease-out;
 }
 
 nav ul li {
@@ -65,6 +73,10 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.1rem;
+}
+
+.nav-a:hover {
+    color:rgba(230, 179, 255, 0.957)
 }
 
 .header-content {
@@ -91,7 +103,7 @@ nav ul li a {
     color: #fff;
     /* font-weight: 600; */
     border: 2px solid #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.75rem;
     border-radius: 50px;
     margin-top: 20px;
 }
@@ -162,6 +174,37 @@ nav ul li a {
     margin-bottom: 2rem;
 }
 
+.name-date {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    padding: 0;
+    margin-bottom: .25rem;
+    margin-top: 2.5rem;
+}
+
+/* .name-bullets {
+    border: 2px solid red;
+} */
+
+.name-bullets p {
+    margin: 0px 0px;
+    margin-bottom: .75rem;
+}
+
+.name-bullets ul li {
+    margin-left: 3rem;
+    /* list-style-type:symbols(); */
+}
+
+.education-h3 {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 .tech-skills {
     /* margin-top: 1rem; */
     text-align: center;
@@ -194,37 +237,6 @@ nav ul li a {
 .tech-skills-item {
     list-style-type: none;
     font-size: 1.25rem;;
-}
-
-.name-date {
-    display: flex;
-    justify-content: space-between;
-    /* border: 2px solid blue; */
-    padding: 0;
-    margin-bottom: .25rem;
-    margin-top: 2.5rem;
-}
-
-/* .name-bullets {
-    border: 2px solid red;
-} */
-
-.name-bullets p {
-    margin: 0px 0px;
-    margin-bottom: .75rem;
-}
-
-.name-bullets ul li {
-    margin-left: 3rem;
-    /* list-style-type:symbols(); */
-}
-
-.education-h3 {
-    text-align: center;
-    padding-top: 2%;
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
 }
 
 
