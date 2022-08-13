@@ -25,7 +25,7 @@ main, footer, body {
 
 
 /* transparnt backgrounds */
-nav ul, a, .header-content, .header-content h2, strong, #Experience, .experience-h3, .name-date, .experience-1, .name-date h4, .name-date h4 b, .experience-2, .name-bullets, ul, ul li, i, .name-bullets p, .tech-skills, .tech-skills-section, .tech-skills-list, .tech-skills-image, .education, .education-h3, .education-1, .education-2, #Projects, .projects-h3, #projects-list, .project-card, .project-card p, #Contact, .contact-box-form, .contact-left, .contact-right, .contact-h3, .input-row, .input-group, label, input, form, .contact-left h3, textarea, button, .contact-right h3, .lets-connect, .col-1 p, .col-2 p, .icons, .contact-right .lets-connect .col-1, .contact-right .lets-connect .col-2{
+nav ul, a, .header-content, .header-content h2, strong, #Experience, .experience-h3, .name-date, .experience-1, .name-date h4, .name-date h4 b, .experience-2, .name-bullets, ul, ul li, i, .name-bullets p, .tech-skills, .tech-skills-section, .tech-skills-list, .tech-skills-image, .education, .education-h3, .education-1, .education-2, #Projects, .projects-h3, #projects-list, .project-card, .project-card p, #Contact, .contact-box-form, .contact-left, .contact-right, .contact-h3, .input-row, .input-group, label, input, form, .contact-left h3, textarea, button, .contact-right h3, .lets-connect, .col-1 p, .col-2 p, .icons, .contact-right .lets-connect .col-1, .contact-right .lets-connect .col-2, .made-with, .fa-brands, div, .project-title-card{
     background-color: transparent;
 }
 
@@ -54,7 +54,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: background-color 0.3s ease-out;
+    transition: background-color 0.7s ease-out;
 }
 
 nav ul li {
@@ -130,7 +130,7 @@ nav ul li a {
 #About {
     /* background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
     /* border: 2px solid rgb(255, 0, 149); */
-    padding: 10vh;
+    padding: 7vh;
     margin-top: 2%;
     display: flex;
     border-radius: 20px;
@@ -164,7 +164,7 @@ nav ul li a {
     /* border: 2px solid rgb(255, 0, 195); */
     border-radius: 20px;
     margin-top: 4.5rem;
-    padding: 1rem;
+    padding: 7vh;
     padding-top: 0.50%;
 }
 
@@ -277,9 +277,45 @@ nav ul li a {
     margin-bottom: 5rem;
 }
 
-/* #projects-list .project-card:first-child {
-    padding-top: 0;
+.made-with {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.project-card-icons {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+
+/* .div-project-button {
+        border: 1px solid #ff8899;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
 } */
+
+.project-button {
+    background-color: rgba(12,3,51,0.4);
+    box-shadow: 0px 5px 10px 3px rgba(124, 0, 181, 0.3);
+    border: none;
+    font-size: 2rem;
+    width: 5rem;
+    margin: 0 auto;
+}
+
+.project-a-button {
+    display: flex;
+    background-color: darkslateblue;
+    box-shadow: 0px 5px 15px 3px rgba(124, 0, 181, 0.3);
+    border: none;
+    font-size: 2rem;
+    width: 5rem;
+    margin: 0 auto;
+    text-decoration: none;
+}
 
 #Projects .project-card img {
     /* max-width: calc(100% - 1rem); */
@@ -297,10 +333,10 @@ nav ul li a {
     /* padding-top: 2%; */
 }
 
-.project-a-title-card {
+.project-title-card {
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     /* border: 2px solid yellow; */
     display: block;
     margin-bottom: 1rem;
@@ -308,8 +344,11 @@ nav ul li a {
     margin-top: 3rem;
 }
 
-.project-card p {
-    margin: 0 2rem;
+.p-projects {
+    font-size: 1.35rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right:1rem;
 }
 
 a:hover {
@@ -395,7 +434,7 @@ label {
     color:rgba(12,3,51,0.6);
 }
 
-button {
+.contact-button {
     background-color: rgba(12,3,51,0.4);
     /* position: fixed; */
     display:block;
@@ -406,7 +445,7 @@ button {
     height: 2rem;
     border-radius: 2rem;
     margin-top: 0.5rem;
-    box-shadow: 0px 5px 15px 0px rgba(124, 0, 181, 0.3)
+    box-shadow: 0px 5px 15px 0px rgba(124, 0, 181, 0.3);
 }
 
 .contact-left h3 {
@@ -451,7 +490,7 @@ tr td {
     justify-content: space-between;
     /* align-items: space-around; */
     /* background-color: */
-    margin-right: 0rem;
+    margin-right: 1.5rem;
     margin-left: 1.5rem;
     padding-top: 2rem;
 }
@@ -534,6 +573,7 @@ tr td {
         border-top: 2px solid white;
         margin: 0;
         padding-bottom: 2rem;
+        border-left: none;
         /* padding-left: 2rem; */
     }
 
@@ -541,6 +581,7 @@ tr td {
         margin-top: 0;
         margin-right: 3rem;
         padding-top: 0.5rem;
+        border-right: none;
     }
 
     .header-content h1 {
@@ -570,7 +611,7 @@ tr td {
         border-top: 2px solid white;
         margin: 0;
         padding-bottom: 2rem;
-
+        border-left: none;
     }
 
     .lets-connect {
@@ -581,14 +622,18 @@ tr td {
 }
 
 /* RESPONSIVE NAV BAR  */
-@media screen and (max-width: 656px){
+@media screen and (max-width: 648px){
+
+    /* .clouds {
+        padding: 0;
+    } */
 
     #navbar {
         padding-top: 2rem;
         padding-right: 0;
         padding-left:0;
-        /* padding-right: 0.5rem; */
-        /* padding-left: 0.5rem; */
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
         width: 100%;
         overflow: auto;
         display: flex;
