@@ -674,13 +674,13 @@ tr td {
         text-align: center;
     }
 
-    .fa-k {
+    .fa-laptop-code {
         display: none;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .fa-k {
+    .fa-laptop-code {
         display: none;
     }
 
